@@ -1,0 +1,14 @@
+{
+  "hash": "bdce8a069b41e7e92aae62fcd47dd0a4",
+  "result": {
+    "markdown": "---\ntitle: \"New Post Test\"\nauthor: \"Gabi Yepez\"\ndate: \"2023-01-28\"\ncategories: [new, testing]\nimage: \"cypher hd wallpaper.png\"\n---\n\n\nTesting - following the tutorial, but not sure how to remove the old image, trying to put a new one.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

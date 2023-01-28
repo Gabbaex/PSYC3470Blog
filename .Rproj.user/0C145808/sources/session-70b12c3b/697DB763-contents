@@ -1,0 +1,15 @@
+---
+title: "New Post Test"
+author: "Gabi Yepez"
+date: "2023-01-28"
+categories: [new, testing, confused]
+image: "cypher hd wallpaper.png"
+---
+
+Testing - following the tutorial, but not sure how to remove the old image, trying to put a new one. I also kept the original code that was in the copied post, but changed some numbers - also not sure how that works.
+
+Update - I didn't know how to put the image in and it wasn't working for a while. However, something I did made it show up now woo!
+
+```{r}
+1000 - 7
+```
