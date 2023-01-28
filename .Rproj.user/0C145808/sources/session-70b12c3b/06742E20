@@ -3,7 +3,7 @@
     "path": "C:/Users/gabiy/OneDrive/Desktop/PSYC 3470 Data Analytics and Data Visualization in the Social and Behavioral Sciences/3470github/PSYC3470Blog/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "181489568",
+    "hash": "215812715",
     "contents": "",
     "dirty": false,
     "created": 1674934527682.0,
@@ -11,14 +11,16 @@
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "2,18",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1674934521,
+    "lastKnownWriteTime": 1674939177,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1674934521,
+    "last_content_update": 1674939177230,
     "read_only": false,
     "read_only_alternatives": []
 }
