@@ -1,7 +1,7 @@
 {
-  "hash": "bdce8a069b41e7e92aae62fcd47dd0a4",
+  "hash": "6551c3f6e33f9a891f5c817346e0fb3f",
   "result": {
-    "markdown": "---\ntitle: \"New Post Test\"\nauthor: \"Gabi Yepez\"\ndate: \"2023-01-28\"\ncategories: [new, testing]\nimage: \"cypher hd wallpaper.png\"\n---\n\n\nTesting - following the tutorial, but not sure how to remove the old image, trying to put a new one.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"New Post Test\"\nauthor: \"Gabi Yepez\"\ndate: \"2023-01-28\"\ncategories: [new, testing, confused]\nimage: \"cypher hd wallpaper.png\"\n---\n\n\nTesting - following the tutorial, but not sure how to remove the old image, trying to put a new one. I also kept the original code that was in the copied post, but changed some numbers - also not sure how that works.\n\nUpdate - I didn't know how to put the image in and it wasn't working for a while. However, something I did made it show up now woo!\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1000 - 7\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 993\n```\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
