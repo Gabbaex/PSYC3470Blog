@@ -16,5 +16,11 @@
   },
   "posts/tip-sheet/index.qmd": {
     "index.html": "c7de5413"
+  },
+  "posts/week-3/index.qmd": {
+    "index.html": "5162ed8e"
+  },
+  "posts/week-4-testing/index.qmd": {
+    "index.html": "61be7e14"
   }
 }

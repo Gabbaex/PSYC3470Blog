@@ -1,0 +1,34 @@
+1 + 1
+1000 - 7
+1000 - 7
+1000 - 7
+1000 - 7
+beepr::beep()
+beepr::beep()
+library(tidyverse)
+detach("package:tidyverse", unload = TRUE)
+library(tidyverse)
+install.packages(c("dplyr", "fs", "gargle", "tinytex", "utf8", "xfun"))
+library(rlang)
+library(rlang)
+?beepr
+??beepr
+?beeper::beep
+??beep
+help("beep", pachage="beepr")
+help("beep", package="beepr")
+?mean
+mean(1:5)
+mean()
+mean
+2+2
+1:10
+cat("hello")
+cat("pressing play runs the chunk into the console")
+2+2
+1:10
+1:5
+1:20
+1:5
+library(ggplot2)
+library(tidyverse)

@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/week-4-testing/index.html",
+      "/posts/week-3/index.html",
       "/posts/new-post-test/index.html",
       "/posts/post-with-code/index.html",
       "/posts/tip-sheet/index.html",

@@ -1,0 +1,70 @@
+---
+title: "Week 3 Post"
+author: "Gabi Yepez"
+date: "2023-02-15"
+categories: [assignment3]
+---
+
+1.  Be able to make a new .qmd document
+
+yes.
+
+2.  Be able to render a .qmd document
+
+yes.
+
+3.  Explain the difference between the source editor view and visual editor view in Rstudio.
+
+source view is plain text characters, visual view is rendered form of plain text that's interpreted to a formatted markdown.
+
+4.  Be able to insert simple markdown plain text (headers, lists, paragraphs), and render the document.
+
+**regular test of a text** *regular test of a fancy test* quick maths: 45^0^ 65^38^ 12^500000^ ~~haha jk~~ `why is this purple`
+
+![Caption](image.png)
+
+$insert math equation here$
+
+`grey square maker`
+
+`ctrl + alt + i , shortcut to make R space block thingy`
+
+```{r, render="asis"}
+
+cat("hello")
+
+cat("pressing play runs the chunk into the console")
+
+2+2
+
+```
+
+```{r}
+#|echo: true
+#|eval: false
+
+1:10
+1:5
+1:20
+
+```
+
+can highlight portion of code in R chunk, type ctrl + enter to run selected part(s)
+
+syntax for R chunk #| and press tab to see options for parameters
+
+5.  Be aware of resources to help you learn more about markdown options.
+
+6.  Be able to insert an R code chunk, and show the output in the rendered document.
+
+-macro for quick insert Running R code chunks in a qmd pressing play copy/paste into console highlight then command-enter (mac) precedence issues (first to last)
+
+7.  Be aware of R code chunk options, and how to use eval, messages, error, warning, and echo.
+
+8.  Be able to set code chunk options per chunk, and/or for the whole document. Understand rules for precedence (which options will apply if both are set.)
+
+9.  Write inline r code.
+
+10. Explain how the rendering environment is different from the Rstudio environment.
+
+11. Be aware of more advanced quarto options for html documents, and try some of the options.
