@@ -1,0 +1,35 @@
+---
+title: "plots.qmd"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(ggthemes)
+library(lubridate)
+
+```
+
+```{r}
+
+survey_data <- read_csv("https://psyteachr.github.io/ads-v2/data/survey_data.csv")
+
+```
+
+```{r}
+ggplot()
+
+ggplot(data = survey_data, mapping = aes(x = wait_time, y = satisfaction))
+
+ggplot(survey_data, aes(x = wait_time, y = satisfaction)) + geom_point(color="red", shape=18, size = 5) + geom_point(color="black", shape=18, size = 3) + geom_smooth(method = "lm", color="green")
+
+ggplot(survey_data, aes(x = wait_time, y = satisfaction, color = wait_time, size = satisfaction)) + geom_point()
+
+min(survey_data$wait_time)
+max(survey_data$wait_time)
+length(survey_data$wait_time)
+
+ggplot(data=survey_data, mapping= aes(x=wait_time)) + geom_histogram(bins=50, color="orange")
+
+```
