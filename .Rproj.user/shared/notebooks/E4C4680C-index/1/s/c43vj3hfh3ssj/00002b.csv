@@ -1,0 +1,13 @@
+"0","library(dplyr)"
+"0",""
+"0","filtered_data <- tweets %>%"
+"0","  filter(favorite_count < 100) # thingy called pipe operator, sends data into next step aka filter"
+"0",""
+"0","ggplot(tweets, aes(x=favorite_count))+geom_histogram()"
+"2","Warning in gzfile(file, ""wb"") :"
+"2","
+ "
+"2"," cannot open compressed file 'C:/Users/gabiy/OneDrive/Desktop/PSYC 3470 Data Analytics and Data Visualization in the Social and Behavioral Sciences/3470github/PSYC3470Blog/.Rproj.user/shared/notebooks/E4C4680C-index/1/0C1458081fbfc0df/c43vj3hfh3ssj_t/cb4b987cb8e0480797779ee39a854a53.snapshot', probable reason 'No such file or directory'
+"
+"2","Error in gzfile(file, ""wb"") : cannot open the connection
+"

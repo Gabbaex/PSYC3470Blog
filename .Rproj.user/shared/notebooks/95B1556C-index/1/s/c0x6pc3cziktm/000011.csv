@@ -1,0 +1,108 @@
+"0",""
+"0","gs4_auth(email = ""leultimateruler@gmail.com"")"
+"2","Is it OK to cache OAuth access credentials in the folder
+]8;;file://C:/Users/gabiy/AppData/Local/gargle/gargle/Cache[34mC:/Users/gabiy/AppData/Local/gargle/gargle/Cache[39m]8;; between R
+sessions?
+"
+"1",""
+"1","
+"
+"1","1: Yes"
+"1","
+"
+"1","2: No"
+"1","
+"
+"1",""
+"1","
+"
+"0","1"
+"2","The [34mhttpuv[39m package enables a nicer Google auth experience,
+in many cases.
+"
+"2","It doesn't seem to be installed.
+"
+"2","Would you like to install it now?
+"
+"1",""
+"1","
+"
+"1","1: Yes"
+"1","
+"
+"1","2: No"
+"1","
+"
+"1",""
+"1","
+"
+"0","1"
+"2","Installing package into ‘C:/Users/gabiy/AppData/Local/R/win-library/4.2’
+(as ‘lib’ is unspecified)
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.2/httpuv_1.6.9.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 980007 bytes (957 KB)
+"
+"2","downloaded 957 KB
+
+"
+"1","package ‘httpuv’ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\gabiy\AppData\Local\Temp\RtmpUTgSx2\downloaded_packages"
+"1",""
+"1","
+"
+"2","Waiting for authentication in browser...
+"
+"2","Press Esc/Ctrl + C to abort
+"
+"2","Authentication complete.
+"
+"0","# create a new sheet"
+"0","sheet_id <- gs4_create(name = ""demo-file"", "
+"0","                       sheets = ""letters"")"
+"2","[32m✔[39m Creating new Sheet: [36mdemo-file[39m.
+"
+"0","# define the data table to save"
+"0","letter_data <- tibble("
+"0","  character = LETTERS[1:5],"
+"0","  integer = 1:5,"
+"0","  double = c(1.1, 2.2, 3.3, 4.4, 5.5),"
+"0","  logical = c(T, F, T, F, T),"
+"0","  date = lubridate::today()"
+"0",")"
+"0",""
+"0","write_sheet(data = letter_data, "
+"0","            ss = sheet_id, "
+"0","            sheet = ""letters"")"
+"2","[32m✔[39m Writing to [36mdemo-file[39m.
+"
+"2","[32m✔[39m Writing to sheet [32mletters[39m.
+"
+"0","## append some data"
+"0","new_data <- tibble("
+"0","  character = ""F"","
+"0","  integer = 6L,"
+"0","  double = 6.6,"
+"0","  logical = FALSE,"
+"0","  date = lubridate::today()"
+"0",")"
+"0","sheet_append(data = new_data,"
+"0","             ss = sheet_id,"
+"0","             sheet = ""letters"")"
+"2","[32m✔[39m Writing to [36mdemo-file[39m.
+"
+"2","[32m✔[39m Appending 1 row to [32mletters[39m.
+"
+"0","# read the data"
+"0","demo <- read_sheet(ss = sheet_id, sheet = ""letters"")"
+"2","[32m✔[39m Reading from [36mdemo-file[39m.
+"
+"2","[32m✔[39m Range '[33m'letters'[39m'.
+"

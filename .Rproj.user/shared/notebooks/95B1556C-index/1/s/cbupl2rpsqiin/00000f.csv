@@ -1,0 +1,9 @@
+"0",""
+"0","gs4_deauth() # skip authorisation for public data"
+"0",""
+"0","demo_gs4  <- googlesheets4::read_sheet("
+"0","  ss = ""16dkq0YL0J7fyAwT1pdgj1bNNrheckAU_2-DKuuM6aGI"")"
+"2","[32m✔[39m Reading from [36mdemo[39m.
+"
+"2","[32m✔[39m Range [33mSheet1[39m.
+"
