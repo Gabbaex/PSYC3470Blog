@@ -1,0 +1,4 @@
+"0","ggplot(data=survey_data, mapping= aes(x=wait_time)) + geom_histogram(bins=50, color=""orange"")"
+"2","Error in ggplot(data = survey_data, mapping = aes(x = wait_time)) : 
+  object 'survey_data' not found
+"

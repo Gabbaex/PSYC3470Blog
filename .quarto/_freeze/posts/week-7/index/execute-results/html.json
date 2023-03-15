@@ -1,0 +1,16 @@
+{
+  "hash": "52d16d4974fb10b1120234ba1d303eff",
+  "result": {
+    "markdown": "---\ntitle: \"Week 7 more ggplot\"\nauthor: \"Gabi Yepez\"\ndate: \"2023-03-13\"\ncategories: [ggplot]\nimage: \"galaxy-brain-meme.jpg\"\n---\n\n\n### ggplot\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.4.0     ✔ purrr   1.0.1\n✔ tibble  3.1.8     ✔ dplyr   1.1.0\n✔ tidyr   1.3.0     ✔ stringr 1.5.0\n✔ readr   2.1.3     ✔ forcats 1.0.0\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n```\n:::\n\n```{.r .cell-code}\ngrades <- c(2.5, 8, 4)\nstudents <- c(\"A\", \"B\", \"C\")\n\n# same number of vectors, can list into tibble\n\nstudent_performance <- tibble(students, grades)\n\n# alternative syntax\n\nstudent_performance <- tibble(\n  grades = c(2.5,8,4),\n  students = c(\"A\",\"B\",\"C\")\n  )\n\n# ggplot bar graph\nggplot(student_performance, aes(x = students, y = grades))+geom_bar(stat = \"identity\", width = 0.25, fill = \"white\", colour = \"blue\", linewidth = 1)+lims(y=c(0,10))+scale_y_continuous(breaks = 0:10, limits = c(0,10))+theme_bw(base_size = 14)+geom_text(label = grades, position = position_dodge(width  = .9), vjust = -0.4)+xlab(\"Students\")+ylab(\"Grades\")+ggtitle(\"Student Performance\")\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nScale for y is already present.\nAdding another scale for y, which will replace the existing scale.\n```\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

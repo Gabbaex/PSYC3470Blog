@@ -143,4 +143,3 @@ sheet_append(data = new_data,
 # read the data
 demo <- read_sheet(ss = sheet_id, sheet = "letters")
 ```
-

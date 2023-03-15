@@ -1,0 +1,2 @@
+"0",""
+"0","ggplot(tweets, aes(x=favorite_count))+geom_histogram()"

@@ -1,4 +1,0 @@
-"0","date_from <- tweet_summary$min_date %>% # inline code"
-"0","  format(""%d %B, %Y"")"
-"0","date_to <- tweet_summary$max_date %>% "
-"0","  format(""%d %B, %Y"")"

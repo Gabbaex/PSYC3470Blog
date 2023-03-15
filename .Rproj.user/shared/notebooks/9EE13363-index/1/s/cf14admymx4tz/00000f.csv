@@ -1,8 +1,0 @@
-"0",""
-"0","# list datasets built in to base R"
-"0","data()"
-"0",""
-"0","# lists datasets in a specific package"
-"0","data(package = ""tidyr"")"
-"0",""
-"0",""

@@ -1,0 +1,8 @@
+"0",""
+"0","library(dplyr)"
+"0",""
+"0","filtered_data <- tweets %>%"
+"0","  filter(favorite_count < 100) # thingy called pipe operator, sends data into next step aka filter"
+"0",""
+"0","ggplot(tweets, aes(x=favorite_count))+geom_histogram()"
+"0",""

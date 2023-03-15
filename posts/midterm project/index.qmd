@@ -1,0 +1,72 @@
+---
+title: "Midterm Testing"
+author: "Gabi Yepez"
+date: "2023-03-15"
+categories: [midterm]
+image: "galaxy-brain-meme.jpg"
+---
+
+### midterm stuff
+
+```{r}
+# 1
+
+a<-1
+b<-2
+c<-3
+
+(a+b) / c
+
+# 2
+
+solution <- 1:100
+
+a <- c()
+
+for(i in 1:100) {
+  a[i] <- i
+}
+a
+
+i <- 0
+a <- c()
+while(i <= 100) {
+  i <- i+1
+  a[i] <- i
+}
+
+a
+```
+
+fizzbuzz problem w/ chatgbt
+
+write sum for all integers between two values
+
+```{r}
+sum(50:100) # easy way but have to write function to find it
+
+# function syntax
+sum_sequence <- function(min,max){
+  return(sum(min:max))
+}
+
+sum_sequence(min=5, max=100)
+
+sum_sequence_loop <- function(min,max){
+  a <- 0
+   for(i in min:max){
+    a <- a+i
+   }
+  return(a)
+}
+
+
+```
+
+generate 100 random #
+
+```{r}
+runif(50,0,50)
+
+```
+
