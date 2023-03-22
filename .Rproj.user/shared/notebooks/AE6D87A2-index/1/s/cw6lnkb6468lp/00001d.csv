@@ -1,0 +1,4 @@
+"0",""
+"0","# if row have number greater than 10, filters"
+"0","full_data %>%"
+"0","  filter(items > 10) # column name w/ logical comparison"

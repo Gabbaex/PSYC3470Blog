@@ -1,0 +1,3 @@
+"0",""
+"0","ggplot(data_census, aes(x = squirrel, y = food))+geom_col(linewidth = 3, fill = ""firebrick"")+scale_x_discrete(labels = abbreviate, limits = c(""42C-AM-1007-02"",""36E-AM-1013-02"",""3F-PM-1013-03"", ""2F-PM-1014-03"", ""15G-PM-1019-01"",""1I-PM-1012-04"",""34A-PM-1013-04""))+ggtitle(""Was the squirrel eating?"")"
+"0",""

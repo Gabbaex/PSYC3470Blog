@@ -1,0 +1,5 @@
+"0",""
+"0","# adds multiple new column"
+"0","orders_B %>%"
+"0","  mutate(satisfaction = NA,"
+"0","         numbers = 1:9)"

@@ -1,0 +1,7 @@
+"2","Warning in gzfile(file, ""wb"") :"
+"2","
+ "
+"2"," cannot open compressed file 'C:/Users/gabiy/OneDrive/Desktop/PSYC 3470 Data Analytics and Data Visualization in the Social and Behavioral Sciences/3470github/PSYC3470Blog/.Rproj.user/shared/notebooks/D0C06B63-index/1/0C145808a5bdd6e8/c50auu6bnyt7n_t/e3c81ae969fb4e7d8ca8860b6337bd67.snapshot', probable reason 'No such file or directory'
+"
+"2","Error in gzfile(file, ""wb"") : cannot open the connection
+"

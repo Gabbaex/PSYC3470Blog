@@ -1,0 +1,2 @@
+"0",""
+"0","ggplot(data_census, aes(x = squirrel, y = color)) + geom_point(color=""black"", shape=18, size = 4) + geom_point(color=""lightgreen"", shape=18, size = 2.5)"

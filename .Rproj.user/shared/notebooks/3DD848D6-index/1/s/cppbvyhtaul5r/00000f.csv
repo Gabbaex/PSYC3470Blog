@@ -1,0 +1,11 @@
+"0","library(tidyverse)     # includes readr & tibble"
+"0","library(rio)           # for almost any data import/export"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"2","The following rio suggested packages are not installed: ‘arrow’, ‘feather’, ‘fst’, ‘hexView’, ‘pzfx’, ‘readODS’, ‘rmatio’
+Use 'install_formats()' to install them
+"
+"0","library(haven)         # for SPSS, Stata,and SAS files"
+"0","library(readxl)        # for Excel files"

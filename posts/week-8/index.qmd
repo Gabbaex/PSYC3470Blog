@@ -1,0 +1,74 @@
+---
+title: "Week 8 Testing"
+author: "Gabi Yepez"
+date: "2023-01-25"
+categories: [Data Relations]
+image: "galaxy-brain-meme.jpg"
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+customers <- tibble(
+  id = 1:5,
+  city = c("Port Ellen", "Dufftown", NA, "Aberlour", "Tobermory"),
+  postcode = c("PA42 7DU", "AB55 4DH", NA, "AB38 7RY", "PA75 6NR")
+)
+
+orders <- tibble(
+  id = c(2, 3, 4, 4, 5, 5, 6, 6, 7),
+  items = c(10, 18, 21, 23, 9, 11, 11, 12, 3)
+)
+```
+
+## Dplyr Mutate
+
+```{r}
+
+orders_B <- tibble(
+  id = c(2, 3, 4, 4, 5, 5, 6, 6, 7),
+  items = c(10, 18, 21, 23, 9, 11, 11, 12, 3)
+)
+
+# adds new column
+orders_B %>%
+  mutate(satisfaction = NA)
+
+# adds multiple new column
+orders_B %>%
+  mutate(satisfaction = NA,
+         numbers = 1:9)
+
+# have to assign back to tibble to update
+orders_B <- orders_B %>%
+  mutate(satisfaction = NA,
+         numbers = 1:9)
+
+orders_B %>%
+  mutate(numbers_as_strings = as.character(numbers))
+
+# math operation on columns
+orders_B %>%
+  mutate(items_minus_id = items - id)
+```
+
+## Dpylr Filter
+
+```{r}
+full_data <- full_join(customers, orders, by = "id")
+full_data
+
+# if row have number greater than 10, filters
+full_data %>%
+  filter(items > 10) # column name w/ logical comparison
+
+full_data %>%
+  filter(postcode == "AB38 7RY")
+
+# filter uses & to show both post code with items greater
+full_data %>%
+  filter(postcode == "AB38 7RY" & items > 21)
+```
+

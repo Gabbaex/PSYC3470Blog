@@ -1,0 +1,4 @@
+"0","tweets_per_user <- tweets %>%"
+"0","  count(screen_name, sort = TRUE)"
+"0",""
+"0","head(tweets_per_user)"

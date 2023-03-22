@@ -1,0 +1,5 @@
+"0","unique_users <- nrow(tweets_per_user)"
+"0","most_prolific <- slice(tweets_per_user, 1) %>% "
+"0","  pull(screen_name)"
+"0","most_prolific_n <- slice(tweets_per_user, 1) %>% "
+"0","  pull(n)"

@@ -1,0 +1,8 @@
+"0",""
+"0","# have to assign back to tibble to update"
+"0","orders_B <- orders_B %>%"
+"0","  mutate(satisfaction = NA,"
+"0","         numbers = 1:9)"
+"0",""
+"0","orders_B %>%"
+"0","  mutate(numbers_as_strings = as.character(numbers))"

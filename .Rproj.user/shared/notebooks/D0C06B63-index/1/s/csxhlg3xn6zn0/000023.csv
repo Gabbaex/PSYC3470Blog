@@ -1,0 +1,8 @@
+"0","df <- data.frame(map=c(""PL"", ""LS"", ""BE"", ""BD"", ""HN"", ""FE"", ""ST"", ""IX"", ""AT"", NA),"
+"0","                winrate=c(53.8, 45.5, 52.9, 48.3, 58.3, 16.7, 40.0, 40.0, 35.7, 0))"
+"0",""
+"0","library(ggplot2)"
+"0",""
+"0","ggplot(data=df, aes(x=map, y=winrate, group=1)) +"
+"0","  geom_line(linetype = ""dashed"",color=""yellow"", linewidth=.75)+"
+"0","  geom_point(color = ""green"")+theme_dark(base_line_size = 1.75)+lims(y=c(0,100))"
