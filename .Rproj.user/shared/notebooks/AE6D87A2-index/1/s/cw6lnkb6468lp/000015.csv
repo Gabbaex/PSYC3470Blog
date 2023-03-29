@@ -1,0 +1,4 @@
+"0",""
+"0","# filter uses & to show both post code with items greater"
+"0","full_data %>%"
+"0","  filter(postcode == ""AB38 7RY"" & items > 21)"
