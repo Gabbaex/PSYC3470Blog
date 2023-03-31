@@ -3,8 +3,9 @@
     "listing": "/index.html",
     "items": [
       "/posts/week-8/index.html",
+      "/posts/part 2/index.html",
       "/posts/week-9-data report/index.html",
-      "/posts/midterm project/index.html",
+      "/posts/midterm part 1/index.html",
       "/posts/week-6/index.html",
       "/posts/week-7/index.html",
       "/posts/week-5/index.html",
@@ -12,9 +13,7 @@
       "/posts/week-5a-testing/index.html",
       "/posts/week-3/index.html",
       "/posts/new-post-test/index.html",
-      "/posts/post-with-code/index.html",
-      "/posts/tip-sheet/index.html",
-      "/posts/welcome/index.html"
+      "/posts/tip-sheet/index.html"
     ]
   }
 ]

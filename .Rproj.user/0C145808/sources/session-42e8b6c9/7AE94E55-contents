@@ -1,0 +1,105 @@
+---
+title: "Midterm part 1"
+author: "Gabi Yepez"
+date: "2023-03-15"
+categories: [midterm]
+image: "galaxy-brain-meme.jpg"
+---
+
+### 1
+
+> R objects: show that you understand and can create/use objects of various types, including at least: character/string, numeric, integer, logical, data.frame, and list. Show that you can index objects appropriately (e.g., locate elements of an object, change elements of an object etc.)
+
+```{r}
+d <- c("Red", "Green", "Blue")
+e <- c(0.5,1.0,1.5,2.0,2.5)
+f <- c(1,2,3,4,5)
+g <- c("One", "Two", "Three")
+h <- e + f
+
+f > e
+d == g
+h == e + f
+
+is.numeric(e)
+typeof(e)
+
+is.integer(f)
+typeof(f)
+
+is.character(d)
+is.character(g)
+typeof(TRUE)
+
+df <- data.frame (colors = c("red", "orange", "yellow", "green", "blue", "purple"), levels = c(10, 8, 6, 4, 2, 0), more_colors = c("firebrick", "chocolate", "gold", "seagreen", "deepskyblue", "magenta"))
+
+df
+
+list1 <- list(d, c("Yellow", "Green", "Purple", "Orange"))
+print(list1)
+```
+
+### 2
+
+> Logical operations: show that you understand and can use logical operators in R (e.g., == \| \> \< \>= \<=)
+
+```{r}
+1 == 1
+2 == 3
+489 != 489
+245 <= 246
+g > d
+g < d
+e >= f
+h >= f
+e + f == h
+16 %% 4 == 0 | 16 %% 8 == 0
+8 %% 2 == 0 & 8 %% 4 == 0
+```
+
+### 3
+
+> Loops: Show that you understand the components of a for loop, and that you can use a for loop.
+
+```{r}
+j <- c(0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0)
+
+for (i in j) {
+  if (i == 0) {
+    print("zero")
+  } else {
+    print("one")
+  }
+}
+
+for (i in f) {
+  print(i)
+}
+
+for (x in j) {
+  print(x + 2)
+}
+```
+
+### 4
+
+> Functions: Show that you understand the syntax for declaring your own function, and that you can declare and run your own custom function to accomplish some task (you choose what the function does).
+
+```{r}
+f1 <- function(l) {
+  for(i in l) {
+    m <- i - 3
+    print(m)
+  }
+}
+
+f1(9000)
+
+f2 <- function() {
+  for(i in 300:0) {
+    print(i-3)
+  }
+}
+
+f2()
+```
