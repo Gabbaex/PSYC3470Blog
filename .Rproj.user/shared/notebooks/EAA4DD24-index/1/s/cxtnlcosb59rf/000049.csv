@@ -11,5 +11,5 @@
 "0","  scale_x_continuous(breaks = 1999:2018)+"
 "0","  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust =1))+"
 "0","  xlab("""")+ylab("""")+"
-"0","  ggtitle(label = ""Number of Reviews per year"", subtitle = ""1999 to 2018"")+"
-"0","  theme(panel.grid.major=element_line(color = ""darkgrey""), panel.grid.minor=element_line(color = ""lightgrey""), panel.background = element_rect(fill = ""lightgrey""))"
+"0","  ggtitle(label = ""Number of reviews per year"", subtitle = ""1999 to 2018"")+"
+"0","  theme(panel.grid.major=element_line(color = ""darkgrey""), panel.grid.minor=element_line(color = ""lightgrey""), panel.background = element_rect(fill = ""lightgrey""), plot.background = element_rect(fill = ""lightgrey""))"

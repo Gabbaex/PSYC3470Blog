@@ -2,19 +2,3 @@
 "0",""
 "0","review_data <- rio::import(""data/review_data.csv"") #load the data"
 "0",""
-"0","glimpse(review_data)"
-"1","Rows: 497,577"
-"1",""
-"1","
-"
-"1","Columns: 4"
-"1",""
-"1","
-"
-"1","$ rating       [3m[38;5;246m<int>[39m[23m 5, 4, 3, 2, 5, 4, 1, 5, 5, 4, 4, 1, 5, 5, 5, 4…
-$ verified     [3m[38;5;246m<lgl>[39m[23m TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, FALSE, TR…
-$ year         [3m[38;5;246m<int>[39m[23m 2015, 2015, 2015, 2015, 2014, 2014, 2014, 2014…
-$ reviewerName [3m[38;5;246m<chr>[39m[23m ""Ambrosia075"", ""travis"", ""Vincent G. Mezera"", …"
-"1",""
-"1","
-"
