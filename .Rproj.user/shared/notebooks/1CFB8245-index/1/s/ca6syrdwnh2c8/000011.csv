@@ -1,0 +1,2 @@
+"0","ggplot(long_totalprice, aes(x = totalprice, fill = year)) +"
+"0","  geom_histogram(binwidth = 10, color = ""black"")"

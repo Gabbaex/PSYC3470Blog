@@ -1,0 +1,6 @@
+"0","tidy_data %>%"
+"0","  group_by(customer_id) %>%"
+"0","  summarise("
+"0","    total_items = sum(items),"
+"0","    total_price = sum(totalprice)"
+"0","  )"

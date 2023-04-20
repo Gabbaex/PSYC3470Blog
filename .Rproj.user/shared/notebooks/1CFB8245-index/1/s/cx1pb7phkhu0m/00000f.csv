@@ -1,0 +1,1 @@
+"0","tidy_data <- read_csv(""data/tidy_data.csv"", show_col_types = FALSE)"
