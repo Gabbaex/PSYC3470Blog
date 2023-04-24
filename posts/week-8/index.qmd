@@ -1,9 +1,9 @@
 ---
-title: "Week 8 data relations"
+title: "Week 8: Data Relations"
 author: "Gabi Yepez"
 date: "2023-03-29"
 categories: [Data Relations]
-image: "galaxy-brain-meme.jpg"
+image: "data_relation.jpg"
 ---
 
 ```{r}

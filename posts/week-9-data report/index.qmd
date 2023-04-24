@@ -2,8 +2,8 @@
 title: "Video Game Review Report"
 author: "Gabi Yepez"
 date: "2023-03-27"
-categories: [data report]
-image: "galaxy-brain-meme.jpg"
+categories: [Data Report]
+image: "review_report.jpg"
 toc: true
 execute: 
   echo: false
@@ -175,4 +175,3 @@ ggplot(data = year_rating_status,
   theme(panel.grid.major=element_line(color = "darkgrey"), panel.grid.minor=element_line(color = "lightgrey"), panel.background = element_rect(fill = "lightgrey"), plot.background = element_rect(fill = "lightgrey"), legend.position = "bottom", legend.background = element_rect(fill = "lightgrey"))
 
 ```
-

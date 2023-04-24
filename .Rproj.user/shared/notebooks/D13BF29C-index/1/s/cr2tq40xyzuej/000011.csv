@@ -1,0 +1,5 @@
+"0",""
+"0","# retain any rows where the region is not east or west, and where the product does not equal gadgets"
+"0","budget %>%"
+"0","  filter(!region %in% c(""East"", ""West""),"
+"0","         product != ""gadgets"")"

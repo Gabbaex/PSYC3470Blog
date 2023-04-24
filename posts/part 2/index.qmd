@@ -1,16 +1,16 @@
 ---
-title: "Midterm part 2"
+title: "Midterm: Part II"
 author: "Gabi Yepez"
 date: "2023-03-28"
-categories: [midterm]
-image: "galaxy-brain-meme.jpg"
+categories: [Midterm]
+image: "midterm.jpg"
 ---
 
 # M2: *Solving Problems*
 
 ## 1
 
->Do simple math with numbers, addition, subtraction, multiplication, division
+> Do simple math with numbers, addition, subtraction, multiplication, division
 
 ```{r}
 1+1
@@ -21,7 +21,7 @@ image: "galaxy-brain-meme.jpg"
 
 ## 2
 
->Put numbers into variables, do simple math on the variables
+> Put numbers into variables, do simple math on the variables
 
 ```{r}
 a<-1
@@ -33,7 +33,7 @@ c<-3
 
 ## 3
 
->Write code that will place the numbers 1 to 100 separately into a variable using for loop. Then, again using the seq function.
+> Write code that will place the numbers 1 to 100 separately into a variable using for loop. Then, again using the seq function.
 
 ```{r}
 solution <- 1:100
@@ -57,7 +57,7 @@ a
 
 ## 5
 
->Write a function to find the sum of all integers between any two values
+> Write a function to find the sum of all integers between any two values
 
 ```{r}
 sum(50:100) # easy way but have to write function to find it
@@ -82,7 +82,7 @@ sum_sequence_loop <- function(min,max){
 
 ## 7
 
->List all of the prime numbers from 1 to 1000
+> List all of the prime numbers from 1 to 1000
 
 ```{r}
 a <- 1:1000
@@ -110,7 +110,7 @@ for(i in a){
 
 ## 9
 
->Generate 100 random numbers within a specific range
+> Generate 100 random numbers within a specific range
 
 ```{r}
 runif(100,0,100)
@@ -157,7 +157,9 @@ my_unique <- function(x){
   return(unique_number)
 }
 ```
+
 ## Harder Problems
+
 ##### (*thank you chatgbt*)
 
 ### 1 Fizzbuzz
@@ -265,4 +267,3 @@ simulate_game <- function() {
 # Run the game
 simulate_game()
 ```
-

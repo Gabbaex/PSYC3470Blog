@@ -1,9 +1,9 @@
 ---
-title: "Week 7 more ggplot2"
+title: "Week 7: More ggplot2"
 author: "Gabi Yepez"
 date: "2023-03-13"
-categories: [ggplot]
-image: "galaxy-brain-meme.jpg"
+categories: [ggplot2]
+image: "moreggplot.jpg"
 ---
 
 ## ggplot2 (more edition)

@@ -1,8 +1,9 @@
 ---
-title: "Week 3 qmd skills"
+title: "Week 3: Qmd Skills"
 author: "Gabi Yepez"
 date: "2023-02-15"
-categories: [assignment3, suspicious, experiment]
+categories: [Qmd Experiment]
+image: "quarto.jpg" 
 format:
   html: 
     toc: true

@@ -1,9 +1,9 @@
 ---
-title: "Week 10 data tidying"
+title: "Week 10: Data Tidying"
 author: "Gabi Yepez"
 date: "2023-04-17"
-categories: [data tidying]
-image: "galaxy-brain-meme.jpg"
+categories: [Data Tidying]
+image: "data_tidy.webp"
 ---
 
 ### Data Tidying
@@ -80,7 +80,6 @@ wide_by_year <- pivot_wider( #
   values_from = totalprice # the new column values
 )
 ```
-
 
 ```{r}
 #reshapes data longer-wise
@@ -186,7 +185,6 @@ tidy_data <- type_convert(
 )
 ```
 
-
 ```{r}
 tidy_data <- read_csv(file = "data/untidy_data.csv",
                       show_col_types = FALSE) %>%
@@ -223,4 +221,3 @@ tidy_data <- read_csv(file = "data/untidy_data.csv",
 
 tidy_data #displays final tidy data
 ```
-

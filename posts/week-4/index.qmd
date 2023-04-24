@@ -1,8 +1,9 @@
 ---
-title: "Week 4 data vis"
+title: "Week 4: Data Visualization"
 author: "Gabi Yepez"
 date: "2023-03-01"
-categories: [assignment4, data types, tidy data, ggplot2]
+categories: [Data Types, Tidy Data, ggplot2]
+image: "data_vis.png"
 ---
 
 ```{r}

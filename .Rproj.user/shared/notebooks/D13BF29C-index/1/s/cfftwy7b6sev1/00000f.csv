@@ -1,0 +1,3 @@
+"0","budget <- read_csv(""data/budget.csv"", show_col_types = FALSE)"
+"0",""
+"0","view(budget)"

@@ -1,0 +1,154 @@
+---
+title: "Week 11 data wrangling"
+author: "Gabi Yepez"
+date: "2023-04-24"
+categories: [data wrangling]
+image: "galaxy-brain-meme.jpg"
+---
+
+### 
+
+```{r}
+library(dplyr)
+library(tidyverse)
+```
+
+```{r}
+budget <- read_csv("data/budget.csv", show_col_types = FALSE)
+
+view(budget)
+```
+
+```{r}
+# select single column by name, uses pipe operator
+product_dat <- budget %>% select(product)
+
+# select single column by number
+product_dat <- budget %>% select(2) 
+
+product_dat <- budget %>% select(2,3)
+```
+
+```{r}
+# to print column 2 n 3 - not assigned so prints by default
+budget %>% select(2,3)
+
+#can also type name of variable to print
+product_dat
+
+#will look better rendered w html
+knitr::kable(product_dat)
+```
+
+### colon notation
+
+```{r}
+# select columns individually
+sales2019 <- budget %>% select(region, product, sales_2019)
+
+# select columns with colon
+sales2019 <- budget %>% select(region:sales_2019)
+
+#select columns w colon
+years <- budget %>% select(3:7)
+years <- budget %>% select(sales_2019:satisfaction_2020)
+years
+
+# excluding colums using minus
+
+# de-select individual columns
+sales <- budget %>% select(-expenses_2019, -expenses_2020)
+
+# de-select a range of columns
+sales <- budget %>% select(-(expenses_2019:expenses_2020))
+sales
+```
+
+```{r}
+# select all rows where region equals North
+budget %>% filter(region == "North")
+
+# select all rows where expenses_2020 were exactly equal to 200
+budget %>% filter(expenses_2020 == 200)
+
+# select all rows where sales_2019 was more than 100
+budget %>% filter(sales_2019 > 100)
+
+# everything but the North
+budget %>% filter(region != "North")
+```
+
+```{r}
+# regions and products with profit in both 2019 and 2020
+profit_both <- budget %>% 
+  filter(
+    sales_2019 > expenses_2019,
+    sales_2020 > expenses_2020
+  )
+
+# the same as above, using & instead of a comma
+profit_both <- budget %>% 
+  filter(
+    sales_2019 > expenses_2019 &
+    sales_2020 > expenses_2020
+  )
+
+# regions and products with profit in 2019 or 2020
+profit_either <- budget %>% 
+  filter(
+    sales_2019 > expenses_2019 |
+    sales_2020 > expenses_2020
+  )
+
+# 2020 profit greater than 1000
+profit_1000 <- budget %>%
+  filter(sales_2020 - expenses_2020 > 1000)
+```
+
+### in
+
+```{r}
+# retain any rows where region is north or south, and where product equals widget
+budget %>%
+  filter(region %in% c("North", "South"),
+         product == "widgets")
+
+# retain any rows where the region is not east or west, and where the product does not equal gadgets
+budget %>%
+  filter(!region %in% c("East", "West"),
+         product != "gadgets")
+```
+
+```{r}
+#more in examples
+a <- c(1:5)
+
+#looks through and outcomes true or false
+6 %in% a
+1 %in% a
+
+#to check if not in
+if(1 %in% a == TRUE){
+  "yes"
+}
+
+if(6 %in% a == FALSE){
+  "yes"
+}
+
+#default variable 'letters' prints out a-z
+letters
+LETTERS
+
+which(letters %in% "g", arr.ind = TRUE) #where is index of letter
+```
+
+### arrange
+
+```{r}
+# arranging the table 
+# first by product in alphabetical order
+# then by "region" in reverse alphabetical order
+budget %>%
+  arrange(product, desc(region))
+```

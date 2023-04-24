@@ -1,0 +1,3 @@
+"0",""
+"0","# select all rows where expenses_2020 were exactly equal to 200"
+"0","budget %>% filter(expenses_2020 == 200)"

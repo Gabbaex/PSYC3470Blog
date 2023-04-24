@@ -1,9 +1,9 @@
 ---
-title: "Week 6 data summaries"
+title: "Week 6: Data Summaries"
 author: "Gabi Yepez"
 date: "2023-03-15"
 categories: [Data Summaries]
-image: "galaxy-brain-meme.jpg"
+image: "data_summary.jpg"
 ---
 
 ## Data Summaries

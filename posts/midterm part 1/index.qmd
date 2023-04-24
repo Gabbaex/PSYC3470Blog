@@ -1,9 +1,9 @@
 ---
-title: "Midterm part 1"
+title: "Midterm: Part I"
 author: "Gabi Yepez"
 date: "2023-03-15"
-categories: [midterm]
-image: "galaxy-brain-meme.jpg"
+categories: [Midterm]
+image: "midterm.jpg"
 ---
 
 ## M1: *Explaining Basic Programming Skills*
