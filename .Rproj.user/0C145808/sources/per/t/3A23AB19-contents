@@ -1,0 +1,88 @@
+---
+title: "Week 4: Data Visualization"
+author: "Gabi Yepez"
+date: "2023-03-01"
+categories: [Data Types, Tidy Data, ggplot2]
+image: "data_vis.png"
+---
+
+```{r}
+library(tidyverse)
+library(patchwork)
+library(ggthemes)
+library(lubridate)
+```
+
+## Data Types
+
+```{r}
+a <- 2.5 # assigning character/variable
+
+class(a) # find out it's numeric
+typeof(a) # find out it's a double
+is.integer(a) # find out it's not an integer (integers don't have decimals)
+as.integer(a) # rounds (2.5) down to an integer (2)
+is.character(a) # find out if it's character or not
+
+```
+
+```{r}
+integer(length = 5)
+
+numeric(length = 5)
+
+```
+
+```{r}
+# logical/boolean
+typeof(TRUE) # uppercase true makes logical variables
+class(TRUE) 
+is.logical(FALSE) # same with uppercase false
+as.logical(1) # one will be seen as true
+as.logical(0) # zero will be seen as false
+logical(length = 3) # initializes logical vector three times
+```
+
+## Tidy Data
+
+```{r}
+# tidy data must have every column a variable, every row an observation, and every cell a single value
+library(tidyr)
+
+atla <- tibble(
+  name = c("Katara", "Toph", "Sokka", "Zuko", "Azula", "Suki", "Princess Yue"),
+  bends = c("water", "earth", NA, "fire", "fire", NA, "water"),
+  friendly = c(TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE),
+  nation = c("water tribe","earth kingdom","water tribe","fire nation","fire nation","earth kingdom","water tribe"),
+  personal_rating = c(7,10,5,8,2,10,6) # out of ten
+)
+atla # tibble name prints table
+tidyr::as_tibble(atla)
+```
+
+## ggplot2
+
+```{r}
+survey_data <- read_csv("https://psyteachr.github.io/ads-v2/data/survey_data.csv", show_col_types = FALSE)
+```
+
+```{r}
+ggplot()
+
+ggplot(data = survey_data, mapping = aes(x = wait_time, y = satisfaction))
+
+ggplot(survey_data, aes(x = wait_time, y = satisfaction)) + geom_point(color="red", shape=18, size = 5) + geom_point(color="black", shape=18, size = 3) + geom_smooth(method = "lm", color="green")
+```
+
+```{r}
+
+ggplot(survey_data, aes(x = wait_time, y = satisfaction, color = wait_time, size = satisfaction)) + geom_point()
+
+min(survey_data$wait_time)
+max(survey_data$wait_time)
+length(survey_data$wait_time)
+```
+
+```{r}
+ggplot(data=survey_data, mapping= aes(x=wait_time)) + geom_histogram(bins=50, color="orange")
+```

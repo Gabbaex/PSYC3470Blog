@@ -1,8 +1,8 @@
 ---
-title: "Week 11 data wrangling"
+title: "Week 11: Data Wrangling"
 author: "Gabi Yepez"
 date: "2023-04-24"
-categories: [data wrangling]
+categories: [Data Wrangling]
 image: "galaxy-brain-meme.jpg"
 ---
 

@@ -3,7 +3,7 @@
     "path": "C:/Users/gabiy/OneDrive/Desktop/PSYC 3470 Data Analytics and Data Visualization in the Social and Behavioral Sciences/3470github/PSYC3470Blog/posts/week-11/index.qmd",
     "project_path": "posts/week-11/index.qmd",
     "type": "quarto_markdown",
-    "hash": "899868683",
+    "hash": "2037529378",
     "contents": "",
     "dirty": false,
     "created": 1682356560105.0,
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "2:0",
+        "rmdVisualModeLocation": "93:0",
         "cursorPosition": "154,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1682354879,
+    "lastKnownWriteTime": 1682369441,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1682356568131,
+    "last_content_update": 1682369441282,
     "read_only": false,
     "read_only_alternatives": []
 }
