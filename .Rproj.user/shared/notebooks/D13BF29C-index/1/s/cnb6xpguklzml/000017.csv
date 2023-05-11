@@ -1,0 +1,4 @@
+"0",""
+"0","# filter out gadgets"
+"0","year_prod %>%"
+"0","  filter(product != ""gadgets"")"

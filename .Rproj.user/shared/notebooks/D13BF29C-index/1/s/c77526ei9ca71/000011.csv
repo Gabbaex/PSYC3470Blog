@@ -1,0 +1,7 @@
+"0","budget4 %>%"
+"0","  summarise("
+"0","    mean_sales = mean(sales),"
+"0","    mean_expenses = mean(expenses),"
+"0","    min_profit = min(expenses - sales),"
+"0","    max_profit = max(expenses - sales)"
+"0","  )"

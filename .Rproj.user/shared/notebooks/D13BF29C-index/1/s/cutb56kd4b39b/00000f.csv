@@ -1,0 +1,4 @@
+"0",""
+"0","budget2 <- budget2 %>%"
+"0","  mutate(profit_category = profit > 0,"
+"0","         product = as.factor(product))"

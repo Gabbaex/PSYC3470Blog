@@ -1,0 +1,5 @@
+"0","# arranging the table "
+"0","# first by product in alphabetical order"
+"0","# then by ""region"" in reverse alphabetical order"
+"0","budget %>%"
+"0","  arrange(product, desc(region))"

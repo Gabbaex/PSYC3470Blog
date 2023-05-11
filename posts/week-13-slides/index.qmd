@@ -1,0 +1,45 @@
+---
+title: "Week 13: Slide Decks"
+author: "Gabi Yepez"
+date: "2023-04-08"
+format:
+  revealjs:
+    theme: moon
+categories: [Quarto, Slides]
+image: "galaxy-brain-meme.jpg"
+---
+
+## Week 13: Slides with Revealjs
+
+<https://quarto.org/docs/presentations/revealjs/>
+
+## Second slide
+
+- test text of second slide
+- text of second slide
+- even more text of second slide
+
+## Third slide {background-color="darkred"}
+
+:::
+
+- adding increment colons thing
+- not sure if it's gonna work
+- hm
+- added a space
+
+:::
+
+## Multi-column
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Test text for the column
+
+:::
+
+::: {.column width="30%"}
+
+Will this be a bigger column? Test text.
+

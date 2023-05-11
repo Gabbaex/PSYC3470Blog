@@ -1,0 +1,4 @@
+"0","# retain any rows where region is north or south, and where product equals widget"
+"0","budget %>%"
+"0","  filter(region %in% c(""North"", ""South""),"
+"0","         product == ""widgets"")"

@@ -1,0 +1,8 @@
+"0",""
+"0","# remove any rows with any missing values"
+"0","complete_data <- missing_data %>%"
+"0","  drop_na()"
+"0",""
+"0","# remove any rows that are missing a value for sales"
+"0","complete_sales <- missing_data %>%"
+"0","  drop_na(sales)"

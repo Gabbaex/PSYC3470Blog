@@ -1,0 +1,5 @@
+"0","survey_data <- read_csv(file = ""data/survey_data.csv"","
+"0","                        show_col_types = FALSE)"
+"0",""
+"0","ggplot(survey_data, aes(x = wait_time)) +"
+"0","  geom_histogram()"

@@ -1,0 +1,5 @@
+"0","ggplot(survey_data, aes(x = wait_time)) +"
+"0","  scale_x_continuous(name = ""Wait time (seconds)"","
+"0","                     breaks = seq(0, 600, 60)) +"
+"0","  geom_freqpoly(boundary = 0, binwidth = 15, "
+"0","                color = ""black"")"

@@ -1,0 +1,5 @@
+"0",""
+"0","budget %>%"
+"0","  mutate(region = factor(region, levels = c(""North"", ""South"", ""East"", ""West""))) %>%"
+"0","  filter(product == ""gadgets"") %>%"
+"0","  arrange(region)"

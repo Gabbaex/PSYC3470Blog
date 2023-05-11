@@ -1,0 +1,63 @@
+"0","# All packages used in this script:"
+"0","library(portalr)"
+"2","Warning: package ‘portalr’ was built under R version 4.2.3"
+"2","You don't appear to have a defined location for storing Portal data.
+"
+"2","[31m●[39m  Call [90m`use_default_data_path(""<path>"")`[39m if you wish to set the default data path.
+"
+"2","Portal data will be downloaded into [90m`C:/Users/gabiy/OneDrive/Documents`[39m otherwise.
+"
+"0","library(dplyr)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","download_observations(""."")"
+"2","Downloading version `4.10.0` of the data...
+"
+"0","data_tables <- load_rodent_data()"
+"2","Warning: Proceeding to download data into specified path~
+"
+"2","Downloading version `4.10.0` of the data...
+"
+"2","Loading in data version 4.10.0
+"
+"0","species_data <- data_tables[[""species_table""]]"
+"0","plots_data <- data_tables[[""plots_table""]]"
+"0",""
+"0","plot_treatments <- plots_data %>%"
+"0","  filter(year > 1977) |>"
+"0","  mutate(iso_date = as.Date(paste0(year, ""-"", month, ""-"", ""01"")), "
+"0","         plot = as.factor(plot)) %>%"
+"0","  select(iso_date, plot, treatment)"
+"0",""
+"0","plots_data_longterm <- plot_treatments |>"
+"0","  group_by(plot) |>"
+"0","  summarize(treatment = case_when("
+"0","              all(treatment == ""control"") ~ ""control"","
+"0","              all(treatment == ""exclosure"") ~ ""exclosure"")) |>"
+"0","  filter(!is.na(treatment))"
+"0",""
+"0","species_data <- species_data |>"
+"0","  filter(censustarget == 1, unidentified == 0)"
+"0",""
+"0","survey_data <- summarize_individual_rodents("
+"0","  time = ""date"","
+"0","  length = ""Longterm"") |>"
+"0","  filter(year > 1977) |>"
+"0","  filter(species %in% unique(species_data$species))"
+"2","Loading in data version 4.10.0
+"
+"0","write.csv(survey_data, ""surveys.csv"", row.names = FALSE, na = """")"
+"0","write.csv(plots_data_longterm, ""plots.csv"", row.names = FALSE, na = """")"
+"0","write.csv(species_data, ""species.csv"", row.names = FALSE, na = """")"

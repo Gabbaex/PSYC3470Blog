@@ -1,0 +1,8 @@
+"0","# new management takes over - people only get a bonus if customer satisfaction was overall high or very high AND if a profit was returned"
+"0",""
+"0","bonus2 <- budget3 %>%"
+"0","  mutate(bonus_2020 = case_when(satisfaction_2020 == ""high"" & "
+"0","                                  profit_category == ""PROFIT"" ~ ""bonus"","
+"0","                                satisfaction_2020 == ""very high"" & "
+"0","                                  profit_category == ""PROFIT"" ~ ""bonus"","
+"0","                                TRUE ~ ""No bonus"")) # set all other values to ""no bonus"""

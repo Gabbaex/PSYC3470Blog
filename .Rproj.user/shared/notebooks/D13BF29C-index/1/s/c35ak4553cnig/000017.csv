@@ -1,0 +1,2 @@
+"0","# select all rows where region equals North"
+"0","budget %>% filter(region == ""North"")"

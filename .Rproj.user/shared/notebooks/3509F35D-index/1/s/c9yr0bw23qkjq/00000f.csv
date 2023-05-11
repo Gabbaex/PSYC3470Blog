@@ -1,0 +1,8 @@
+"0","# create bar plot"
+"0","bar <- ggplot(data = survey_data, "
+"0","              mapping = aes(x = issue_category,"
+"0","                            fill = issue_category)) +"
+"0","  geom_bar(show.legend = FALSE) +"
+"0","  labs(x = ""Issue Category"", "
+"0","       y = ""Count"","
+"0","       title = ""Calls by Issue Category"")"

@@ -1,5 +1,5 @@
 "0","# select single column by name, uses pipe operator"
-"0","product_dat <- budget %>% select(product) "
+"0","product_dat <- budget %>% select(product)"
 "0",""
 "0","# select single column by number"
 "0","product_dat <- budget %>% select(2) "

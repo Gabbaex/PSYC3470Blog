@@ -1,0 +1,5 @@
+"0","# create a column where people get a bonus if customer satisfaction was overall high or very high"
+"0",""
+"0","bonus <- budget3 %>%"
+"0","  mutate(bonus_2019 = case_when(satisfaction_2019 %in% c(""very low"", ""low"", ""neutral"") ~ ""no bonus"","
+"0","                                satisfaction_2019 %in% c(""high"", ""very high"") ~ ""bonus""))"

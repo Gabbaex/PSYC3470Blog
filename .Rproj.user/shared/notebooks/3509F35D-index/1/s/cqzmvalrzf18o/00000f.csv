@@ -1,0 +1,6 @@
+"0","# update column specification"
+"0","ct <- cols(issue_category = col_factor(levels = c(""tech"", ""returns"", ""sales"", ""other"")))"
+"0",""
+"0","# load data"
+"0","survey_data <- read_csv(file = ""data/survey_data.csv"","
+"0","                        col_types = ct)"

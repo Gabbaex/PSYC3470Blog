@@ -1,0 +1,7 @@
+"0","budget2 <- budget %>%"
+"0","  mutate("
+"0","    sales = sales_2019 + sales_2020,"
+"0","    expenses = expenses_2019 + expenses_2020,"
+"0","    profit = sales - expenses,"
+"0","    region = paste(region, ""Office"")"
+"0","  )"
