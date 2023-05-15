@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Gabi Yepez">
 <meta name="dcterms.date" content="2023-04-26">
 
-<title>PSYC3470Blog - Tidy Tuesday: Example</title>
+<title>PSYC3470Blog - Tidy Tuesday: Example II</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -168,7 +168,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Tidy Tuesday: Example</h1>
+      <h1 class="title">Tidy Tuesday: Example II</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Data Tidying</div>
               </div>
@@ -206,11 +206,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
-<div class="cell">
-
-</div>
+<section id="tidy-tuesday---example-ii" class="level3">
+<h3 class="anchored" data-anchor-id="tidy-tuesday---example-ii">Tidy Tuesday - Example II</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>tuesdata <span class="ot">&lt;-</span> tidytuesdayR<span class="sc">::</span><span class="fu">tt_load</span>(<span class="st">'2023-05-02'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -224,45 +221,85 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
-    Downloading file 1 of 3: `plots.csv`
-    Downloading file 2 of 3: `species.csv`
-    Downloading file 3 of 3: `surveys.csv`</code></pre>
+    Downloading file 1 of 3: `plots.csv`</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 10 Github queries remaining until 2023-05-15 12:04:39 PM EDT.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Downloading file 2 of 3: `species.csv`</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 9 Github queries remaining until 2023-05-15 12:04:39 PM EDT.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Downloading file 3 of 3: `surveys.csv`</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 8 Github queries remaining until 2023-05-15 12:04:38 PM EDT.</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>--- Download complete ---</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tuesdata <span class="ot">&lt;-</span> tidytuesdayR<span class="sc">::</span><span class="fu">tt_load</span>(<span class="dv">2023</span>, <span class="at">week =</span> <span class="dv">18</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>tuesdata <span class="ot">&lt;-</span> tidytuesdayR<span class="sc">::</span><span class="fu">tt_load</span>(<span class="dv">2023</span>, <span class="at">week =</span> <span class="dv">18</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 7 Github queries remaining until 2023-05-15 12:04:39 PM EDT.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 7 Github queries remaining until 2023-05-15 12:04:39 PM EDT.</code></pre>
+</div>
 <div class="cell-output cell-output-stderr">
 <pre><code>--- Compiling #TidyTuesday Information for 2023-05-02 ----</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 7 Github queries remaining until 2023-05-15 12:04:39 PM EDT.</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>--- There are 3 files available ---</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
+<pre><code>Only 6 Github queries remaining until 2023-05-15 12:04:38 PM EDT.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
 <pre><code>--- Starting Download ---</code></pre>
 </div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 6 Github queries remaining until 2023-05-15 12:04:38 PM EDT.</code></pre>
+</div>
 <div class="cell-output cell-output-stdout">
-<pre><code>
-    Downloading file 1 of 3: `plots.csv`
-    Downloading file 2 of 3: `species.csv`
-    Downloading file 3 of 3: `surveys.csv`</code></pre>
+<pre><code>    Downloading file 1 of 3: `plots.csv`</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 5 Github queries remaining until 2023-05-15 12:04:38 PM EDT.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Downloading file 2 of 3: `species.csv`</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 4 Github queries remaining until 2023-05-15 12:04:39 PM EDT.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Downloading file 3 of 3: `surveys.csv`</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Only 3 Github queries remaining until 2023-05-15 12:04:39 PM EDT.</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>--- Download complete ---</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>plots <span class="ot">&lt;-</span> tuesdata<span class="sc">$</span>plots</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>species <span class="ot">&lt;-</span> tuesdata<span class="sc">$</span>species</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>surveys <span class="ot">&lt;-</span> tuesdata<span class="sc">$</span>surveys</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>plots <span class="ot">&lt;-</span> tuesdata<span class="sc">$</span>plots</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>species <span class="ot">&lt;-</span> tuesdata<span class="sc">$</span>species</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>surveys <span class="ot">&lt;-</span> tuesdata<span class="sc">$</span>surveys</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># All packages used in this script:</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(portalr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># All packages used in this script:</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(portalr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'portalr' was built under R version 4.2.3</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'dplyr'</code></pre>
@@ -277,44 +314,49 @@ Attaching package: 'dplyr'</code></pre>
 
     intersect, setdiff, setequal, union</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">download_observations</span>(<span class="st">"."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">download_observations</span>(<span class="st">"."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Existing local version is up-to-date with remote version (4.10.0) requested and `force` is FALSE, download is skipped</code></pre>
+<pre><code>Downloading version `4.10.0` of the data...</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>data_tables <span class="ot">&lt;-</span> <span class="fu">load_rodent_data</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Loading in data version 4.10.0</code></pre>
+<pre><code>Warning in file.rename(file.path(path, temp_unzip), final): cannot rename file
+'./weecology-PortalData-a7debc6' to './PortalData', reason 'The system cannot
+find the file specified'</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>species_data <span class="ot">&lt;-</span> data_tables[[<span class="st">"species_table"</span>]]</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>plots_data <span class="ot">&lt;-</span> data_tables[[<span class="st">"plots_table"</span>]]</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>plot_treatments <span class="ot">&lt;-</span> plots_data <span class="sc">%&gt;%</span></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;</span> <span class="dv">1977</span>) <span class="sc">|&gt;</span></span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">iso_date =</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(year, <span class="st">"-"</span>, month, <span class="st">"-"</span>, <span class="st">"01"</span>)), </span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">plot =</span> <span class="fu">as.factor</span>(plot)) <span class="sc">%&gt;%</span></span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(iso_date, plot, treatment)</span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>plots_data_longterm <span class="ot">&lt;-</span> plot_treatments <span class="sc">|&gt;</span></span>
-<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(plot) <span class="sc">|&gt;</span></span>
-<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">treatment =</span> <span class="fu">case_when</span>(</span>
-<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>              <span class="fu">all</span>(treatment <span class="sc">==</span> <span class="st">"control"</span>) <span class="sc">~</span> <span class="st">"control"</span>,</span>
-<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>              <span class="fu">all</span>(treatment <span class="sc">==</span> <span class="st">"exclosure"</span>) <span class="sc">~</span> <span class="st">"exclosure"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(treatment))</span>
-<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>species_data <span class="ot">&lt;-</span> species_data <span class="sc">|&gt;</span></span>
-<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(censustarget <span class="sc">==</span> <span class="dv">1</span>, unidentified <span class="sc">==</span> <span class="dv">0</span>)</span>
-<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>survey_data <span class="ot">&lt;-</span> <span class="fu">summarize_individual_rodents</span>(</span>
-<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="st">"date"</span>,</span>
-<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">length =</span> <span class="st">"Longterm"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;</span> <span class="dv">1977</span>) <span class="sc">|&gt;</span></span>
-<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(species <span class="sc">%in%</span> <span class="fu">unique</span>(species_data<span class="sc">$</span>species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>data_tables <span class="ot">&lt;-</span> <span class="fu">load_rodent_data</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading in data version 4.10.0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(survey_data, <span class="st">"surveys.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">na =</span> <span class="st">""</span>)</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(plots_data_longterm, <span class="st">"plots.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">na =</span> <span class="st">""</span>)</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(species_data, <span class="st">"species.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">na =</span> <span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>species_data <span class="ot">&lt;-</span> data_tables[[<span class="st">"species_table"</span>]]</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>plots_data <span class="ot">&lt;-</span> data_tables[[<span class="st">"plots_table"</span>]]</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>plot_treatments <span class="ot">&lt;-</span> plots_data <span class="sc">%&gt;%</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;</span> <span class="dv">1977</span>) <span class="sc">|&gt;</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">iso_date =</span> <span class="fu">as.Date</span>(<span class="fu">paste0</span>(year, <span class="st">"-"</span>, month, <span class="st">"-"</span>, <span class="st">"01"</span>)), </span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">plot =</span> <span class="fu">as.factor</span>(plot)) <span class="sc">%&gt;%</span></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(iso_date, plot, treatment)</span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>plots_data_longterm <span class="ot">&lt;-</span> plot_treatments <span class="sc">|&gt;</span></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(plot) <span class="sc">|&gt;</span></span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">treatment =</span> <span class="fu">case_when</span>(</span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a>              <span class="fu">all</span>(treatment <span class="sc">==</span> <span class="st">"control"</span>) <span class="sc">~</span> <span class="st">"control"</span>,</span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a>              <span class="fu">all</span>(treatment <span class="sc">==</span> <span class="st">"exclosure"</span>) <span class="sc">~</span> <span class="st">"exclosure"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(treatment))</span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a>species_data <span class="ot">&lt;-</span> species_data <span class="sc">|&gt;</span></span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(censustarget <span class="sc">==</span> <span class="dv">1</span>, unidentified <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a>survey_data <span class="ot">&lt;-</span> <span class="fu">summarize_individual_rodents</span>(</span>
+<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">time =</span> <span class="st">"date"</span>,</span>
+<span id="cb40-22"><a href="#cb40-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">length =</span> <span class="st">"Longterm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb40-23"><a href="#cb40-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;</span> <span class="dv">1977</span>) <span class="sc">|&gt;</span></span>
+<span id="cb40-24"><a href="#cb40-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(species <span class="sc">%in%</span> <span class="fu">unique</span>(species_data<span class="sc">$</span>species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading in data version 4.10.0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(survey_data, <span class="st">"surveys.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">na =</span> <span class="st">""</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(plots_data_longterm, <span class="st">"plots.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">na =</span> <span class="st">""</span>)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(species_data, <span class="st">"species.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">na =</span> <span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
