@@ -6,7 +6,7 @@ categories: [Data Tidying]
 image: "data_tidy.webp"
 ---
 
-## tidy tues example
+## Tidy Tuesday - Example I
 
 ```{r}
 #run once, install package
