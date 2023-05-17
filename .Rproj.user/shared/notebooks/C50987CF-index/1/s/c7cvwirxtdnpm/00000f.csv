@@ -1,0 +1,4 @@
+"0",""
+"0","ggplot(plot_df, aes(x=Phase, y=Proportions))+ "
+"0","  geom_bar(data=mean_df, stat=""identity"",aes(fill=Phase))+"
+"0","  geom_point()"

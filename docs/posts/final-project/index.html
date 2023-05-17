@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Gabi Yepez">
-<meta name="dcterms.date" content="2023-05-15">
+<meta name="dcterms.date" content="2023-05-17">
 
-<title>PSYC3470Blog - Final Project testing</title>
+<title>PSYC3470Blog - Final Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -105,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Final Project testing</h1>
+      <h1 class="title">Final Project</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Final Project</div>
               </div>
@@ -125,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 15, 2023</p>
+        <p class="date">May 17, 2023</p>
       </div>
     </div>
     
@@ -143,13 +206,443 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="final-project" class="level3">
-<h3 class="anchored" data-anchor-id="final-project">Final Project</h3>
+<section id="final-project-t-test-lab10-one-sample-paired-sample" class="level1">
+<h1>Final Project: T-test [Lab10] (one-sample, paired sample)</h1>
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">Research Question:</h2>
+<p>The lab study uses open data from Experiment 1 of Mehr, Song, and Spelke (2016). This is a reproduction of the results found in their paper. The experiment asks ‘Does music convey social information to infants?’. Different infants may grow up in different cultures and thus, the songs they are exposed to will differ. Following this pattern, when someone new sings a familiar song to an infant, it may signal that this person is part of their social group (Mehr et al., 2016).</p>
+</section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data-Sources</h2>
+<p><a href="https://journals.sagepub.com/stoken/default+domain/d5HcBHg85XamSXGdYqYN/full" class="uri">https://journals.sagepub.com/stoken/default+domain/d5HcBHg85XamSXGdYqYN/full</a></p>
+<p><a href="https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/MehrSongSpelke2016.csv" class="uri">https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/MehrSongSpelke2016.csv</a></p>
+<section id="loading-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="loading-the-data">Loading the data</h3>
 <div class="cell">
-
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table) <span class="co">#loads data table library</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>all_data <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">"https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/MehrSongSpelke2016.csv"</span>) <span class="co">#loaded data via web address, easier than downloading data file</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(summarytools) <span class="co">#use to summarize all data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">view</span>(<span class="fu">dfSummary</span>(all_data)) <span class="co">#will show summary of all data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Switching method to 'browser'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Output file written: C:\Users\gabiy\AppData\Local\Temp\Rtmp6l5gRB\file48e8a2b2d7a.html</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:data.table':
+
+    between, first, last</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>experiment_one <span class="ot">&lt;-</span> all_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(exp1<span class="sc">==</span><span class="dv">1</span>) <span class="co">#filtering data to reduce rows into a new variable</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="one-sample-t-test-baseline" class="level3">
+<h3 class="anchored" data-anchor-id="one-sample-t-test-baseline">One Sample T-test [Baseline]</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#data from trials to show infant looking behavior didn't change due to chance</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>baseline <span class="ot">&lt;-</span> experiment_one<span class="sc">$</span>Baseline_Proportion_Gaze_to_Singer</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking at numbers, shows all data point for each infant as dot</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(baseline)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#hist to show frequency proportions better</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(baseline)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="descriptives" class="level3">
+<h3 class="anchored" data-anchor-id="descriptives">Descriptives</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#mean and standard deviation for sample</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(baseline)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.5210967</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(baseline)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1769651</code></pre>
+</div>
+</div>
+</section>
+<section id="t-test" class="level3">
+<h3 class="anchored" data-anchor-id="t-test">T-test</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(baseline, <span class="at">mu=</span>.<span class="dv">5</span>) <span class="co">#reported as "t(31) = .67, p = .505."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  baseline
+t = 0.67438, df = 31, p-value = 0.5051
+alternative hypothesis: true mean is not equal to 0.5
+95 percent confidence interval:
+ 0.4572940 0.5848994
+sample estimates:
+mean of x 
+0.5210967 </code></pre>
+</div>
+</div>
+</section>
+<section id="test-phase" class="level3">
+<h3 class="anchored" data-anchor-id="test-phase">Test Phase</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>test_phase <span class="ot">&lt;-</span> experiment_one<span class="sc">$</span>Test_Proportion_Gaze_to_Singer</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(test_phase)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(test_phase)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(test_phase)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.5934913</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 0.5934913</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(test_phase)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1786884</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 0.1786884</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(test_phase, <span class="at">mu =</span> .<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  test_phase
+t = 2.9597, df = 31, p-value = 0.005856
+alternative hypothesis: true mean is not equal to 0.5
+95 percent confidence interval:
+ 0.5290672 0.6579153
+sample estimates:
+mean of x 
+0.5934913 </code></pre>
+</div>
+</div>
+</section>
+<section id="paired-samples-t-test" class="level3">
+<h3 class="anchored" data-anchor-id="paired-samples-t-test">Paired-samples T-test</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(test_phase, baseline, <span class="at">paired=</span><span class="cn">TRUE</span>, <span class="at">var.equal=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Paired t-test
+
+data:  test_phase and baseline
+t = 2.4164, df = 31, p-value = 0.02175
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.01129217 0.13349698
+sample estimates:
+mean difference 
+     0.07239458 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(test_phase, baseline, <span class="at">paired=</span><span class="cn">TRUE</span>, <span class="at">var.equal=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Paired t-test
+
+data:  test_phase and baseline
+t = 2.4164, df = 31, p-value = 0.02175
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.01129217 0.13349698
+sample estimates:
+mean difference 
+     0.07239458 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>difference_scores<span class="ot">&lt;-</span>test_phase<span class="sc">-</span>baseline</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(difference_scores, <span class="at">mu=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  difference_scores
+t = 2.4164, df = 31, p-value = 0.02175
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 0.01129217 0.13349698
+sample estimates:
+ mean of x 
+0.07239458 </code></pre>
+</div>
+</div>
+</section>
+<section id="other-source" class="level3">
+<h3 class="anchored" data-anchor-id="other-source">Other source</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>difference_scores <span class="ot">&lt;-</span> test_phase<span class="sc">-</span>baseline</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(difference_scores[difference_scores<span class="sc">&gt;</span><span class="dv">0</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 22</code></pre>
+</div>
+</div>
+</section>
+<section id="graphing-findings" class="level3">
+<h3 class="anchored" data-anchor-id="graphing-findings">Graphing Findings</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">#creating dataframe for plotting</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>Phase <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Baseline"</span>,<span class="st">"Test"</span>), <span class="at">each =</span> <span class="dv">32</span>)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>Proportions <span class="ot">&lt;-</span> <span class="fu">c</span>(baseline,test_phase)</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>plot_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Phase,Proportions)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>plot_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      Phase Proportions
+1  Baseline   0.4371257
+2  Baseline   0.4125326
+3  Baseline   0.7544910
+4  Baseline   0.4388778
+5  Baseline   0.4746450
+6  Baseline   0.8709016
+7  Baseline   0.2367150
+8  Baseline   0.7592593
+9  Baseline   0.4163347
+10 Baseline   0.7995338
+11 Baseline   0.3786765
+12 Baseline   0.6978922
+13 Baseline   0.5934066
+14 Baseline   0.6149068
+15 Baseline   0.6149068
+16 Baseline   0.3168317
+17 Baseline   0.3104167
+18 Baseline   0.5043668
+19 Baseline   0.4693396
+20 Baseline   0.5040816
+21 Baseline   0.5640327
+22 Baseline   0.2566372
+23 Baseline   0.7000000
+24 Baseline   0.3823529
+25 Baseline   0.3718593
+26 Baseline   0.2844639
+27 Baseline   0.7678161
+28 Baseline   0.4737864
+29 Baseline   0.8212181
+30 Baseline   0.5901639
+31 Baseline   0.4220374
+32 Baseline   0.4354839
+33     Test   0.6027398
+34     Test   0.6830266
+35     Test   0.7241379
+36     Test   0.2816538
+37     Test   0.4985423
+38     Test   0.9509202
+39     Test   0.4177546
+40     Test   0.9382023
+41     Test   0.5000000
+42     Test   0.5862944
+43     Test   0.4726225
+44     Test   0.5083799
+45     Test   0.8111888
+46     Test   0.5718015
+47     Test   0.7774481
+48     Test   0.2628458
+49     Test   0.5079365
+50     Test   0.4369748
+51     Test   0.5421053
+52     Test   0.6008968
+53     Test   0.4186747
+54     Test   0.7894737
+55     Test   0.7601078
+56     Test   0.6238938
+57     Test   0.3664122
+58     Test   0.4615385
+59     Test   0.8995215
+60     Test   0.5311005
+61     Test   0.5418994
+62     Test   0.7003891
+63     Test   0.7629629
+64     Test   0.4602740</code></pre>
+</div>
+</div>
+</section>
+<section id="plot-of-raw-scores" class="level3">
+<h3 class="anchored" data-anchor-id="plot-of-raw-scores">Plot of Raw Scores</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_df, <span class="fu">aes</span>(<span class="at">x=</span>Phase, <span class="at">y=</span>Proportions))<span class="sc">+</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="plot-of-raw-scores-means" class="level3">
+<h3 class="anchored" data-anchor-id="plot-of-raw-scores-means">Plot of Raw Scores + Means</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>mean_df <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(Proportions <span class="sc">~</span> Phase, plot_df, mean)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_df, <span class="fu">aes</span>(<span class="at">x=</span>Phase, <span class="at">y=</span>Proportions))<span class="sc">+</span> </span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>mean_df, <span class="at">color=</span><span class="st">"Red"</span>, <span class="at">size=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="bar-plot" class="level3">
+<h3 class="anchored" data-anchor-id="bar-plot">Bar Plot</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_df, <span class="fu">aes</span>(<span class="at">x=</span>Phase, <span class="at">y=</span>Proportions))<span class="sc">+</span> </span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">data=</span>mean_df, <span class="at">stat=</span><span class="st">"identity"</span>,<span class="fu">aes</span>(<span class="at">fill=</span>Phase))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_df, <span class="fu">aes</span>(<span class="at">x=</span>Phase, <span class="at">y=</span>Proportions))<span class="sc">+</span> </span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">data=</span>mean_df, <span class="at">stat=</span><span class="st">"identity"</span>,<span class="fu">aes</span>(<span class="at">fill=</span>Phase))<span class="sc">+</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="bar-plot-error-bars" class="level3">
+<h3 class="anchored" data-anchor-id="bar-plot-error-bars">Bar Plot + Error bars</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>difference_scores <span class="ot">&lt;-</span> baseline<span class="sc">-</span>test_phase <span class="co">#calculate difference scores</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>standard_error <span class="ot">&lt;-</span> <span class="fu">sd</span>(difference_scores)<span class="sc">/</span><span class="fu">sqrt</span>(<span class="fu">length</span>(difference_scores)) <span class="co">#calculate SEM</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_df, <span class="fu">aes</span>(<span class="at">x=</span>Phase, <span class="at">y=</span>Proportions))<span class="sc">+</span> </span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">data=</span>mean_df, <span class="at">stat=</span><span class="st">"identity"</span>,<span class="fu">aes</span>(<span class="at">fill=</span>Phase))<span class="sc">+</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="at">data=</span>mean_df, <span class="fu">aes</span>(<span class="at">ymin=</span>Proportions<span class="sc">-</span>standard_error, </span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">ymax=</span>Proportions<span class="sc">+</span>standard_error), <span class="at">width=</span>.<span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha=</span>.<span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>difference_scores <span class="ot">&lt;-</span> test_phase<span class="sc">-</span>baseline <span class="co">#calculate difference scores</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>standard_error <span class="ot">&lt;-</span> <span class="fu">sd</span>(difference_scores)<span class="sc">/</span><span class="fu">sqrt</span>(<span class="fu">length</span>(difference_scores)) <span class="co">#calculate SEM</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>mean_difference <span class="ot">&lt;-</span> <span class="fu">mean</span>(difference_scores)</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(<span class="at">x=</span><span class="st">"MeanDifference"</span>, <span class="at">y=</span>mean_difference)<span class="sc">+</span></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">width=</span>.<span class="dv">5</span>, <span class="at">alpha=</span>.<span class="dv">5</span>)<span class="sc">+</span></span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>difference_scores), <span class="at">alpha=</span>.<span class="dv">25</span>)<span class="sc">+</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean_difference<span class="sc">-</span>standard_error, </span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">ymax=</span>mean_difference<span class="sc">+</span>standard_error), <span class="at">width=</span>.<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `qplot()` was deprecated in ggplot2 3.4.0.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="bar-plot-confidence-intervals" class="level3">
+<h3 class="anchored" data-anchor-id="bar-plot-confidence-intervals">Bar Plot + Confidence Intervals</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>t_test_results <span class="ot">&lt;-</span> <span class="fu">t.test</span>(difference_scores)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>lower_interval<span class="ot">&lt;-</span> t_test_results<span class="sc">$</span>conf.int[<span class="dv">1</span>]</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>upper_interval<span class="ot">&lt;-</span> t_test_results<span class="sc">$</span>conf.int[<span class="dv">2</span>]</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(<span class="at">x=</span><span class="st">"MeanDifference"</span>, <span class="at">y=</span>mean_difference)<span class="sc">+</span></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">width=</span>.<span class="dv">5</span>, <span class="at">alpha=</span>.<span class="dv">5</span>)<span class="sc">+</span></span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>difference_scores), <span class="at">alpha=</span>.<span class="dv">25</span>)<span class="sc">+</span></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>lower_interval, </span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">ymax=</span>upper_interval), <span class="at">width=</span>.<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="data-simulation" class="level3">
+<h3 class="anchored" data-anchor-id="data-simulation">Data Simulation</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>sample_sd   <span class="ot">&lt;-</span> (<span class="fu">sd</span>(baseline)<span class="sc">+</span><span class="fu">sd</span>(test_phase))<span class="sc">/</span><span class="dv">2</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>simulated_means <span class="ot">&lt;-</span> <span class="fu">length</span>(<span class="dv">1000</span>)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>){</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a> simulated_means[i] <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">rnorm</span>(<span class="dv">32</span>,.<span class="dv">5</span>, sample_sd))</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(simulated_means)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co">#simulation of mean difference</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>sample_sd   <span class="ot">&lt;-</span> <span class="fu">sd</span>(baseline<span class="sc">-</span>test_phase)</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>simulated_mean_difference <span class="ot">&lt;-</span> <span class="fu">length</span>(<span class="dv">1000</span>)</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>){</span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a> simulated_mean_difference[i] <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">rnorm</span>(<span class="dv">32</span>,<span class="dv">0</span>, sample_sd))</span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(simulated_mean_difference)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="referneces" class="level2">
+<h2 class="anchored" data-anchor-id="referneces">Referneces</h2>
+<p>Mehr, S. A., Song. L. A., &amp; Spelke, E. S. (2016). For 5-month-old infants, melodies are social. Psychological Science, 27, 486-501.</p>
+<p>Crump, M. J.C., Krishnan, A., Volz, S., Chavarga, A. (2018). Answering questions with data: Lab Manual.</p>
+<p><a href="https://crumplab.com/statisticsLab/lab-6-t-test-one-sample-paired-sample.html#excel-6" class="uri">https://crumplab.com/statisticsLab/lab-6-t-test-one-sample-paired-sample.html#excel-6</a></p>
+<p><a href="https://journals.sagepub.com/stoken/default+domain/d5HcBHg85XamSXGdYqYN/full" class="uri">https://journals.sagepub.com/stoken/default+domain/d5HcBHg85XamSXGdYqYN/full</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

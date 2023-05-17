@@ -1,0 +1,7 @@
+"0","Phase <- rep(c(""Baseline"",""Test""), each = 32)"
+"0",""
+"0","Proportions <- c(baseline,test_phase)"
+"0",""
+"0","plot_df <- data.frame(Phase,Proportions)"
+"0",""
+"0","plot_df"

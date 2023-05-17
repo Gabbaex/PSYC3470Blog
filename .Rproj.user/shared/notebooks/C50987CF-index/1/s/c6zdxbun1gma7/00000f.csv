@@ -1,0 +1,7 @@
+"0",""
+"0","mean_df <- aggregate(Proportions ~ Phase, plot_df, mean)"
+"0",""
+"0",""
+"0","ggplot(plot_df, aes(x=Phase, y=Proportions))+ "
+"0","  geom_point()+"
+"0","  geom_point(data=mean_df, color=""Red"", size=2)"
